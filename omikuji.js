@@ -3,11 +3,13 @@ let userresult;
 
 username = prompt("お名前を教えて下さい。");
 
-if (name == ""){
-  username = "名無し";
+if(username === ""){
+  document.getElementById("name").innerHTML = "名無し"
+}else if(username === null){
+  username = prompt("再度入力して下さい。");
+}else{
+  document.getElementById("name").innerHTML = username
 }
-
-document.getElementById("name").innerHTML = username;
 
 let rand = Math.floor( Math.random() * 5) ;
 if (rand == 0) {
