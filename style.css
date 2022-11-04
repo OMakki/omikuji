@@ -9,3 +9,26 @@ img {
 #result {
   color: green;
 }
+
+@media(max-width: 670px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1000px) {
+  body {
+    font-size: 30px;
+  }
+}
+
+@media(min-width: 1000px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
